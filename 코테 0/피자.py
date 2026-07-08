@@ -4,3 +4,10 @@ def solution(n):
         return n//7
     else:
         return n//7+1
+
+피자 조각수 임의 slice, 사람 수 임의 n
+def solution(slice, n):
+    if n % slice == 0:
+        return n // slice
+    else:
+        return n // slice + 1
