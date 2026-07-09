@@ -11,3 +11,13 @@ def solution(slice, n):
         return n // slice
     else:
         return n // slice + 1
+
+피자를 여섯 조각으로 잘라줌 n명이 모두 같은 수의 피자 조각을 먹어야 한다면 최소 몇 판을 시켜야 하는지
+def solution(n):
+    def gcd(a, b):
+        while b:
+            a, b = b, a % b
+        return a
+
+    lcm = 6 * n // gcd(6, n)
+    return lcm // 6
