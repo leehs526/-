@@ -9,3 +9,7 @@ def solution(n):
 2)
 def solution(n):
     return sum([i for i in range(2, n + 1, 2)])
+    
+3)
+def solution(n):
+    return sum(range(0, n+1, 2))
